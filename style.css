@@ -21,6 +21,25 @@ section{
     padding: 2rem 9%;
 
 }
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: rgb(0,128,128);
+    text-transform: uppercase;
+    color: blue;
+    font-size: 5rem;
+    letter-spacing: 2rem;
+}
+.heading span{
+    color: darkcyan;
+}
+
+.heading span:hover{
+    font-size: 7rem;
+}
+
+
 .btn{
     margin-top: 1rem;
     padding: 0.5rem;
@@ -28,8 +47,26 @@ section{
     padding-left: 1rem;
     border:0.2rem solid royalblue;
     border-radius: 0.5rem;
-    color: blue;cursor: pointer;
+    color: blue;
+    cursor: pointer;
     font-size: 1.7rem;
+}
+.btn span{
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    background:  royalblue;
+    color: lightcyan;
+    margin-left: 0.5rem;
+}
+.btn:hover{
+    background:blue ;
+    color: lightcyan;
+}
+
+.btn:hover span{
+    background:lightcyan;
+    color: royalblue;
+    margin-left: 1rem;
 }
 .header{
     padding: 2rem 9%;
@@ -109,9 +146,49 @@ section{
 
 /*home section end*/
 
+/*services section*/
+.services{
+    background: lightcyan;
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:8rem;
+}
 
+.services .box-container .box{
+    border-radius: 0.5rem;
+    box-shadow:rgb(0,128,128);
+    border: 0.2rem solid royalblue;
+    padding: 2.5rem;
+}
 
+.services .box-container .box:hover{
+    border-radius: 0.5rem;
+    box-shadow:springgreen;
+    border: 0.2rem solid ;
+    background: ;
+    padding: 2.5rem;
+    transition: 0.3s ease ;
+}
 
+.services .box-container .box i{
+    color:darkcyan ;
+    font-size: 5rem;
+}
+
+.services .box-container .box h3{
+    color: blue;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.services .box-container .box p{
+    color: royalblue;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+/*services section end*/
 
 
 
@@ -140,6 +217,9 @@ section{
 }
 .header{
     padding: 2rem;
+}
+section{
+padding: 2rem;
 }
 }
 
