@@ -36,7 +36,8 @@ section{
 }
 
 .heading span:hover{
-    font-size: 7rem;
+    font-size: 6rem;
+    color: blue;
 }
 
 
