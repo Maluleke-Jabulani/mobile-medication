@@ -344,6 +344,53 @@ section{
 /*book section end*/
 
 
+
+/*contact section*/
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact .row .image{
+    flex: 1 1 45rem;
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form{
+    flex: 1 1 45rem; 
+    border:0.3rem solid blue; 
+    box-shadow: black;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.contact .row form h3{
+    color: blue;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.contact .row form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    border-radius: 0.5rem;
+    border:0.3rem solid blue; 
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    padding: 1rem;
+}
+
+.contact .row form .btn{
+    padding: 1rem 3rem;
+}
+/*contact section end*/
 /*footer section */
 
 .footer .box-container{
