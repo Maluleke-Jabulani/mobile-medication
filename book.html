@@ -10,6 +10,7 @@
   <body>
     <section class="book" id="book">
       <h1 class="heading"><span>book</span> now</h1>
+
       <div class="row">
         <div class="image">
           <img src="images/booking.png" alt="" />
@@ -17,6 +18,19 @@
 
         <form action="">
           <h3>book appointment</h3>
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              service booking<span class="fas fa-chevron-down"></span>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#medicine">medicine</a>
+              <a href="#doctor">doctor</a>
+              <a href="#nurse">nurse</a>
+              <a href="#ambulance">ambulance</a>
+            </div>
+          </div>
+
           <input type="text" placeholder="your name" class="box" required />
           <input
             type="contact"
