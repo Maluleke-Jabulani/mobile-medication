@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobmed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="book" id="book">
+      <h1 class="heading"><span>request</span> now</h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/request.jpg" alt="" />
+        </div>
+
+        <form action="">
+          <h3>request</h3>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              services request<span class="fas fa-chevron-down"></span>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#medicine">medicine</a>
+              <a href="#doctor">doctor</a>
+              <a href="#nurse">nurse</a>
+              <a href="#ambulance">ambulance</a>
+            </div>
+          </div>
+          <input type="text" placeholder="full name" class="box" required />
+          <input
+            type="contact"
+            placeholder="contact number"
+            class="box"
+            required
+          />
+          <input
+            type="email"
+            placeholder="email address"
+            class="box"
+            required
+          />
+          <input
+            type="address"
+            placeholder="home address"
+            class="box"
+            required
+          />
+          <input type="text" placeholder="descrption" class="box" required />
+          <input type="submit" value="request now" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
