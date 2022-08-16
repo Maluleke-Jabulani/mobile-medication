@@ -344,6 +344,36 @@ section{
 /*book section end*/
 
 
+/*footer section */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: blue;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+ font-size: 1.2rem;
+    color: dark cyan;
+    padding: 1rem 0;
+    text-transform: lowercase;
+}
+.footer .box-container .box a i{
+    padding-right: 0.5rem;
+    color:teal;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+/*footer section end*/
+
+
 
 
 
