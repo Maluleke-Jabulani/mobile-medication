@@ -30,6 +30,7 @@ section{
     color: blue;
     font-size: 5rem;
     letter-spacing: 2rem;
+    
 }
 .heading span{
     color: darkcyan;
@@ -103,6 +104,9 @@ section{
     background-color: lightcyan;
     font-size:2.5rem;
 }
+.header a span{
+    color: gold;
+}
 
 #menu-btn{
     font-size: 2.5rem;
@@ -140,7 +144,14 @@ section{
     color:  royalblue;
     line-height: 1.8;
     padding: 1rem;
+    text-transform: lowercase;
+    font-style: italic;
     
+}
+
+.home .content a{
+    align-items: center;
+    position: relative;
 }
 
 
@@ -176,6 +187,7 @@ section{
 .services .box-container .box i{
     color:darkcyan ;
     font-size: 5rem;
+    padding-bottom: 0.5rem;
 }
 
 .services .box-container .box h3{
@@ -190,6 +202,98 @@ section{
     line-height: 2;
 }
 /*services section end*/
+
+
+
+/*about section end*/
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    color: blue;
+    text-shadow: black;
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+.about .row .content p{
+    color: blue;
+    padding:1rem 0 ;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-transform: lowercase;
+}
+/*about section end*/
+
+
+/*doctors section */
+
+.doctors .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:8rem;
+}
+
+.doctors .box-container .box{
+    text-align: center;
+    background: lightblue;
+    border-radius: 5rem;
+    border: blue;
+    box-shadow: black;
+    padding: 2rem;
+}
+
+.doctors .box-container .box img{
+    height: 20rem;
+    border:red;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.doctors .box-container .box h3{
+    color: blue;
+    font-size: 2.5rem;
+}
+
+.doctors .box-container .box span{
+    color: darkcyan;
+    font-size: 1.5rem;
+}
+
+.doctors .box-container .box .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height:4.5rem ;
+    font-size: 2rem;
+    color: darkcyan;
+    border-radius:0.5rem ;
+    border: blue;
+    margin:0.3 ;
+}
+
+.doctors .box-container .box .share a:hover{
+    background: gold;
+    color:blue ;
+
+}
+
+/*doctors section end*/
 
 
 
