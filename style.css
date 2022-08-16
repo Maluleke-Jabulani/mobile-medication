@@ -362,13 +362,14 @@ section{
  font-size: 1.2rem;
     color: dark cyan;
     padding: 1rem 0;
-    text-transform: lowercase;
+
 }
 .footer .box-container .box a i{
     padding-right: 0.5rem;
     color:teal;
+    text-transform: lowercase;
 }
-.footer .box-container .box a:hover i{
+.footer .box-container .box a:hover {
     padding-right: 2rem;
 }
 /*footer section end*/
@@ -413,10 +414,10 @@ padding: 2rem;
    .header .navbar{
     position: absolute;
     top: 115%; right: 2rem;
-    border-radius: 5rem;
+    border-radius: 0.5rem;
     box-shadow: rgb(0,128,128);
     width: 30rem;
-    border: royalblue;
+    border:0.2rem solid royalblue;
     background: white;
     transform: scale(0);
     opacity: 0;
