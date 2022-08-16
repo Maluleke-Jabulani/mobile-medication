@@ -179,7 +179,7 @@ section{
     border-radius: 0.5rem;
     box-shadow:springgreen;
     border: 0.2rem solid ;
-    background: ;
+    background: white;
     padding: 2.5rem;
     transition: 0.3s ease ;
 }
@@ -294,6 +294,54 @@ section{
 }
 
 /*doctors section end*/
+
+
+/*book section*/
+
+.book .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.book .row .image{
+    flex: 1 1 45rem;
+}
+
+.book .row .image img{
+    width: 100%;
+}
+.book .row form{
+    flex: 1 1 45rem; 
+    border:0.3rem solid blue; 
+    box-shadow: black;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.book .row form h3{
+    color: blue;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.book .row form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    border-radius: 0.5rem;
+    border:0.3rem solid blue; 
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    padding: 1rem;
+}
+
+.book .row form .btn{
+    padding: 1rem 3rem;
+}
+/*book section end*/
 
 
 
