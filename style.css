@@ -562,13 +562,40 @@ section{
 
 .login .row form .btn{
     padding: 1rem 3rem;
+    cursor: pointer;
 }
 
 
 
-
-
-
+.login .checkbox-text {
+    text-transform: lowercase;
+    display:flex ;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+.login .checkbox-text a{
+    display: flex;
+    text-transform: lowercase;
+}
+.login .checkbox-text a:hover{
+    font-size: 1.8rem;
+    color: darkcyan;
+    text-decoration: underline;
+}
+.checkbox-content input{
+    margin: 0 4px -2px 4px;
+}
+.login-signup{
+    text-transform: lowercase;
+    display:flex ;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0 4px -2px 4px;
+    justify-content: space-between;
+    text-align: center;
+    
+}
 
 
 
