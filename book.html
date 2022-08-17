@@ -16,12 +16,12 @@
           <img src="images/booking.png" alt="" />
         </div>
 
-        <form action="">
+        <form onsubmit="sendEmail(); reset(); return false",>
           <h3>book appointment</h3>
 
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">
-              service booking<span class="fas fa-chevron-down"></span>
+              service booking
             </button>
             <div id="myDropdown" class="dropdown-content">
               <a href="#medicine">medicine</a>
@@ -31,20 +31,42 @@
             </div>
           </div>
 
-          <input type="text" placeholder="your name" class="box" required />
+          <input type="text" id="name" placeholder="your name" class="box" required />
           <input
-            type="contact"
+            type="contact" id="contact"
             placeholder="your contact"
             class="box"
             required
           />
-          <input type="email" placeholder="your email" class="box" required />
+          <input type="email" id="email" placeholder="your email" class="box" required />
+          <input type="text" id="description" placeholder="description" class="box" required />
           <input type="date" class="box" required />
           <input type="submit" value="book now" class="btn" />
         </form>
       </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    
+    <script>
+
+      function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "malulekejabulani96@gmail.com",
+    Password : "@Nkateko19",
+    To : 'malulekejabulani96@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New contact form enquiry",
+    Body : "Name" + document.getElementById("name").value
+            + "<br> Email:" + document.getElementById("email").value
+            + "<br> contact:" + document.getElementById("contact").value
+            + "<br> address:" + document.getElementById("address").value
+            + "<br> description:" + document.getElementById("description").value
+}).then(
+  message => alert("Appointment booked succesfully")
+);
+      }
+    </script>
   </body>
 </html>
