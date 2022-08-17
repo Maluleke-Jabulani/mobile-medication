@@ -37,8 +37,13 @@ section{
 }
 
 .heading span:hover{
-    font-size: 6rem;
-    color: blue;
+    font-size: 5rem;
+    color: gold;
+}
+
+.dropdowns{
+    text-decoration: none;
+    margin-left: -2px;
 }
 
 
@@ -87,6 +92,7 @@ section{
 .header .logo {
     font-size: 2.5rem;
     color: royalblue;
+    text-decoration: none;
 }
 
 .header .logo i{
@@ -290,6 +296,7 @@ section{
 .doctors .box-container .box .share a:hover{
     background: gold;
     color:blue ;
+    border-radius: 5rem;
 
 }
 
@@ -433,6 +440,57 @@ section{
     padding: 1rem 3rem;
 }
 /*contact section end*/
+
+/*sign up section*/
+
+.signup .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.signup .row .image{
+    flex: 1 1 45rem;
+}
+
+.signup .row .image img{
+    width: 100%;
+}
+.signup .row form{
+    flex: 1 1 45rem; 
+    border:0.3rem solid blue; 
+    box-shadow: black;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.signup .row form h3{
+    color: blue;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.signup .row form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    border-radius: 0.5rem;
+    border:0.3rem solid blue; 
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+    padding: 1rem;
+}
+
+.signup .row form .btn{
+    padding: 1rem 3rem;
+}
+
+/*sign up section end*/
+
+
+
 /*footer section */
 
 .footer .box-container{

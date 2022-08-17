@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mobmed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="signup" id="signup">
+      <h1 class="heading"><span>signup</span> now</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/booking.png" alt="" />
+        </div>
+
+        <form action="">
+          <h3>Sign up</h3>
+
+          <input type="text" placeholder="first name" class="box" required />
+          <input type="text" placeholder="middle name optional" class="box" />
+          <input type="text" placeholder="last name" class="box" required />
+          <input
+            type="contact"
+            placeholder="contact number"
+            class="box"
+            required
+          />
+          <input
+            type="email"
+            placeholder="email address"
+            class="box"
+            required
+          />
+          <input
+            type="address"
+            placeholder="street name"
+            class="box"
+            required
+          />
+          <input type="address" placeholder="town/city" class="box" required />
+          <input type="address" placeholder="zip code" class="box" required />
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              province<span class="fas fa-chevron-down"></span>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#mEastern cape">Eastern Cape</a>
+              <a href="#doctor">Free State</a>
+              <a href="#gauteng">Gauteng</a>
+              <a href="#kwazulu">Kwazulu-Natal</a>
+              <a href="#Limpopo">Limpopo</a>
+              <a href="#mpumalanga">Mpumalanga</a>
+              <a href="#Northen cape">northern Cape</a>
+              <a href="#North west">North West</a>
+              <a href="#western cape">Western Cape</a>
+            </div>
+          </div>
+          <input type="text" placeholder="username" class="box" required />
+          <input type="text" placeholder="password" class="box" required />
+          <input type="submit" value="sign up" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
