@@ -19,32 +19,32 @@
         <form action="">
           <h3>Sign up</h3>
           <p>area with <span>*</span> are required</p>
-          <input type="text" placeholder="first name" class="box" required />
+          <input  id="name"type="text" placeholder="first name" class="box" required />
           <input type="text" placeholder="middle name optional" class="box" />
-          <input type="text" placeholder="last name" class="box" required />
+          <input id="surname" type="text" placeholder="last name" class="box" required />
          
-          <select  class="box" name="gender">       
-            <option value="eastern cape">male</option>
-            <option value="Gauteng">female</option>
+          <select id="gender" class="box" name="gender">       
+            <option value="m">male</option>
+            <option value="f">female</option>
            <input type="contact"
             placeholder="contact number"
             class="box"
             required
           />
-          <input
+          <input id="email"
             type="email"
             placeholder="email address"
             class="box"
             required
           />
-          <input
+          <input id="address"
             type="address"
             placeholder="street name"
             class="box"
             required
           />
-          <input type="address" placeholder="town/city" class="box" required />
-          <input type="address" placeholder="zip code" class="box" required />
+          <input id="address2" type="address" placeholder="town/city" class="box" required />
+          <input id="address3" type="address" placeholder="zip code" class="box" required />
 
           
         <select  class="box" name="province">       
@@ -57,14 +57,15 @@
       <option value="north west">north west</option>
       <option value="western cape">western cape</option>
         </select>
-          <input type="text" placeholder="username*" class="box" required />
-          <input type="password" placeholder="password*" class="box" required />
-          <input type="password" placeholder="confirm password*" class="box" required />
+          <input id="username" type="text" placeholder="username*" class="box" required />
+          <input id="password" type="password" placeholder="password*" class="box" required />
+          <input  type="password" placeholder="confirm password*" class="box" required />
           <input type="submit" value="sign up" class="btn" />
         </form>
       </div>
     </section>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -180,7 +180,7 @@ section{
     border-radius: 0.5rem;
     box-shadow:springgreen;
     border: 0.2rem solid ;
-    background: white;
+    background: url(images/123.jpg);
     padding: 2.5rem;
     transition: 0.3s ease ;
 }
@@ -201,7 +201,7 @@ section{
     color: royalblue;
     font-size: 1.4rem;
     line-height: 2;
-}
+    text-transform: lowercase;}
 /*services section end*/
 
 
@@ -230,6 +230,8 @@ section{
     text-shadow: black;
     font-size: 4rem;
     line-height: 1.8;
+    margin-left: 6rem;
+    
 }
 
 .about .row .content p{
@@ -238,6 +240,10 @@ section{
     font-size: 1.5rem;
     line-height: 1.8;
     text-transform: lowercase;
+    margin-left: 6rem;
+}
+.about .row .content .btn{
+    margin-left: 6rem;
 }
 /*about section end*/
 
@@ -286,6 +292,7 @@ section{
     border-radius:0.5rem ;
     border: blue;
     margin:0.3 ;
+
 }
 
 .doctors .box-container .box .share a:hover{
@@ -294,7 +301,10 @@ section{
     border-radius: 5rem;
 
 }
-
+.doctors .btn{
+    margin-left: 30rem;
+    align-items: center;
+}
 /*doctors section end*/
 
 

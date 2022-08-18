@@ -11,19 +11,47 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
 
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyD_KTdprmxi_MdcUcTJHjyFhxPlbn7nRrk",
+    authDomain: "fir-f0ba6.firebaseapp.com",
+    databaseURL: "https://fir-f0ba6-default-rtdb.firebaseio.com",
+    projectId: "fir-f0ba6",
+    storageBucket: "fir-f0ba6.appspot.com",
+    messagingSenderId: "591700204330",
+    appId: "1:591700204330:web:60d93fd73e4e27de201c53"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  
+  var youtubeDB = firebase.database().ref("youtube");
+
+  document.getElementById('signup').addEventListener("submit", submitForm );
+
+function  submitForm(e){
+  e.preventdefault();
+
+  var username = getElementByval('username');
+  var password = getElementByval('password');
+  var email = getElementByval('email');
+
+  console.log(username, password, email)
+}
+
+const getElementByval = (id) => {
+  return document.getElementById(id).value;
+
+}

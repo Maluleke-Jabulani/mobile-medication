@@ -19,17 +19,12 @@
         <form onsubmit="sendEmail(); reset(); return false",>
           <h3>book appointment</h3>
 
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">
-              service booking
-            </button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#medicine">medicine</a>
-              <a href="#doctor">doctor</a>
-              <a href="#nurse">nurse</a>
-              <a href="#ambulance">ambulance</a>
-            </div>
-          </div>
+          
+          <select  class="box" name="request">       
+            <option value="eastern cape">Medicine</option>
+            <option value="Gauteng">Doctor</option>
+            <option value="Gauteng">Nurse</option>
+            <option value="Gauteng">Driver</option>   
 
           <input type="text" id="name" placeholder="your name" class="box" required />
           <input
@@ -39,8 +34,16 @@
             required
           />
           <input type="email" id="email" placeholder="your email" class="box" required />
+          <input
+          type="address" id="address"
+          placeholder="home address"
+          class="box"
+          required
+        />
+
           <input type="text" id="description" placeholder="description" class="box" required />
           <input type="date" class="box" required />
+          <input type="time" class="box" required />
           <input type="submit" value="book now" class="btn" />
         </form>
       </div>

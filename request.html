@@ -17,17 +17,11 @@
 
         <form onsubmit="sendEmail(); reset(); return false",>
           <h3>request</h3>
-          <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">
-              services Request
-            </button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">medicine</a>
-              <a href="#">doctor</a>
-              <a href="#">nurse</a>
-              <a href="#">driver</a>
-            </div>
-          </div>
+          <select  class="box" name="request">       
+            <option value="eastern cape">Medicine</option>
+            <option value="Gauteng">Doctor</option>
+            <option value="Gauteng">Nurse</option>
+            <option value="Gauteng">Driver</option>
           <input type="text" id="name" placeholder="full name" class="box" required />
           <input
             type="contact" id="contact"
