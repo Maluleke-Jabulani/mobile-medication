@@ -466,7 +466,15 @@ section{
     padding-bottom: 1rem;
     font-size: 3rem;
 }
-
+.signup .row form p{
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    color: darkcyan;
+}
+.signup .row form p span{
+    color: red;
+    font-size: 2rem;
+}
 .signup .row form .box{
     width: 100%;
     margin: 0.7rem 0;
@@ -480,6 +488,9 @@ section{
 
 .signup .row form .btn{
     padding: 1rem 3rem;
+}
+.signup form .province{
+    font-size: rem;
 }
 
 /*sign up section end*/
