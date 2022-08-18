@@ -180,7 +180,7 @@ section{
     border-radius: 0.5rem;
     box-shadow:springgreen;
     border: 0.2rem solid ;
-    background: url(images/123.jpg);
+    background: url(images/contact.jpg);
     padding: 2.5rem;
     transition: 0.3s ease ;
 }
@@ -219,6 +219,8 @@ section{
 
 .about .row .image img{
     width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 8rem;
 }
 
 .about .row .content{
