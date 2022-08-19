@@ -108,6 +108,21 @@ section{
 .header a span{
     color: gold;
 }
+.header .navbar .btn{
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 0.2rem solid blue;
+    border-radius: 0;
+}
+
+.header .navbar .btn:hover{
+    color: lightcyan ;
+    background-color: blue;
+    font-size:1rem;
+    border-radius: 0.5rem;
+}
 
 #menu-btn{
     font-size: 2.5rem;
@@ -179,8 +194,8 @@ section{
 .services .box-container .box:hover{
     border-radius: 0.5rem;
     box-shadow:springgreen;
-    border: 0.2rem solid ;
-    background: url(images/contact.jpg);
+    border: 0.2rem solid  teal;
+    background: white;
     padding: 2.5rem;
     transition: 0.3s ease ;
 }
@@ -510,6 +525,9 @@ section{
 
 
 /*footer section */
+.footer{
+    background: lightcyan;
+}
 
 .footer .box-container{
     display: grid;
