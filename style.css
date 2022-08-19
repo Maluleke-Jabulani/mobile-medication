@@ -589,7 +589,15 @@ section{
     padding-bottom: 1rem;
     font-size: 3rem;
 }
-
+.login .row form p{
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    color: darkcyan;
+}
+.login .row form p span{
+    color: red;
+    font-size: 2rem;
+}
 .login .row form .box{
     width: 100%;
     margin: 0.7rem 0;
