@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <link rel="icon" type="image/x-icon" href="/images/ekg.png">
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,62 +13,85 @@
     />
    
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>MobMed.</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo">
-        <i class="fas fa-heartbeat"></i> <span>Mob</span>Med.</a
-      >
-      <nav class="navbar">
-        <a href="#about">about</a>
-        <a href="#services">services</a>
-        <a href="#doctors">team</a>
-        <a href="request.html">request</a>
-        
-        <a href="#contact">contact</a>
-        <a href="login.html" class="btn">
-          login </a
-        >
-        <a href="signup.html" class="btn"
-          >sign up</a>
-      </nav>
 
-      <div id="menu-btn" class="fas fa-bars"></div>
-    </header>
-    <!--home section-->
-    <section class="home" id="home">
-      <div class="image">
-        <img src="images/zama.jpg" alt="" />
-      </div>
-      <div class="content">
+    <!--Added Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
+    <!--Added Font-->
+
+    <link rel="stylesheet" href="style.css"/>
+    <title>MobMed.</title>
+    </head>
+    <body>
+    <header class="header">
+        <a href="#" class="logo">
+        <i class="fas fa-heartbeat"></i> <span>Mob</span>Med.</a>
+
+        <nav class="navbar">
+          <a href="#about">about</a>
+          <a href="#services">services</a>
+          <a href="#doctors">team</a>
+          <a href="request.html">request</a>
+          <a href="#contact">contact</a>
+          <button style="position: relative;padding: 10px 10px;border-radius: 20px;margin: 10px 10px;" onclick="Click()" class="Click">Join Us</button>
+
+          <div id="Switch">
+          <p  style="text-align: center;font-size: 20px;">Get connected right away, simply login or sign up!</p>
+          <div class="Choice">
+            <a  onclick="Log()" id="Login" href="login.html">Login</a>
+            <a onclick="Sign()" id="SignUp" href="signup.html">Sign-Up</a>
+          </div>
+          </div>
+
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+          </header>
+          <!--home section-->
+        <section class="home" id="home">
+
+        <div class="Sprite">
+          <img  class="Logo_Sprite" src="images/ModMedSprite.png" alt="Sprite" />
+        </div>
+
+        <div class="content">
         <h3>Your Doctor on hand</h3>
-        <p>
+        <p style="text-align: center;">
           "Ready to answer your call...."
         </p>
         <br /><br />
-       
-      </div>
-    </section>
-    <!--home section ends-->
+        </div>
 
-    <!--about section-->
-    <section class="about" id="about">
-      <h1 class="heading"><span>about</span> us</h1>
+        </section>
 
-      <div class="row">
+        <div class="content1"><p>Make a request now    <a href="/request.html">Request</a><br>Or simply book  <a href="/book.html">Book</a></p></div>
+        <!--home section ends-->
+
+        <!--about section-->
+        <section class="about" id="about">
+        <h1 style="color:rgb(6, 148, 1)" class="heading"><span>about</span> us</h1>
+
+        <div class="row">
         <div class="image">
           <img src="images/group1.jpg" alt="" />
         </div>
 
         <div class="content">
-          <h3>Who is MobMed?</h3>
+          <h3 style="color: rgb(6, 148, 1);">Who is MobMed?</h3>
 
-          <p>
-            We are a company with a mission to increase cheap and effective access to the healthcare services in your community. Collaborating with important healthcare service providers and enterprises. Financial and medical services should be of high quality, everyone can access inexpensive healthcare no matter where they live or how much money they make.<br><br>
-            
-            Hospitals and clinics can now modernize their operations thanks to MobMed business into a healthcare on-demand service in our neighborhoods.As a result, access to medical facilities can increase they could to their patients without jeopardizing the rules governing health process.
+          <p class="AboutUs">
+            We are a business on a mission to improve access to your local
+            healthcare services in an affordable and efficient way. Partnering
+            with key healthcare service providers and businesses in medicine,
+            financial services and healthcare, we believe that quality,
+            affordable healthcare can be available to everyone, no matter where
+            they live or how much they earn.<br><br>
+            MobMed currently enables clinics and hospitals to transform their
+            business into an on- demand healthcare service in our communities.
+            This means that health facilities can become more accessible than
+            ever to their patients without compromising the regulated health
+            process.
           </p>
          
         </div>
@@ -74,9 +100,8 @@
     <!--about section end-->
 
     <!--services section-->
-
     <section class="services" id="services">
-      <h1 class="heading">our <span>services</span></h1>
+      <h1 class="heading" style="color: rgb(6, 148, 1);">our <span>services</span></h1>
       <div class="box-container">
         <div class="box">
           <i class="fas fa-clock"></i>
@@ -126,7 +151,7 @@
           <i class="fas fa-ambulance"></i>
           <h3>mobile Driver</h3>
           <p>
-          get driver to take you hospital/clinic anytime of the day
+          Get a driver to transport you to a hospital/clinic anytime of the day.
           </p>
           <a href="#" class="btn"
             >learn more <span class="fas fa-chevron-right"></span
@@ -137,14 +162,13 @@
     <!--services section ends-->
 
     <!--career section-->
-
     <section class="doctors" id="doctors">
       <h1 class="heading">our <span>team</span></h1>
       <div class="box-container">
         <div class="box">
-          <img src="images/doc1.jpg" alt="" />
-          <h3>nurses</h3>
-          <span>qualified nurses</span>
+          <div class="imageBox" style="background-image: url(/images/doc1.jpg);background-repeat:no-repeat;background-size:cover;"></div><br>
+          <h3>nurses</h3><br>
+          <span>qualified nurses</span><br>
           <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -154,9 +178,9 @@
         </div>
 
         <div class="box">
-          <img src="images/driver.jpg" alt="" />
-          <h3>driver</h3>
-          <span>licensed drivers</span>
+          <div class="imageBox"></div><br>
+          <h3>driver</h3><br>
+          <span>licensed drivers</span><br>
           <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -166,9 +190,9 @@
         </div>
 
         <div class="box">
-          <img src="images/doc3.jpg" alt="" />
-          <h3>doctors</h3>
-          <span>qualified doctors</span>
+          <div class="imageBox"></div><br>
+          <h3>doctors</h3><br>
+          <span>qualified doctors</span><br>
           <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -178,9 +202,9 @@
         </div>
 
         <div class="box">
-          <img src="images/pharmacy.jpg" alt="" />
-          <h3>pharmacists</h3>
-          <span>qualified pharmacists</span>
+          <div class="imageBox"></div><br>
+          <h3>pharmacists</h3><br>
+          <span>qualified pharmacists</span><br>
           <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -189,9 +213,9 @@
           </div>
         </div>
         <div class="box">
-          <img src="images/hospital.jpg" alt="" />
-          <h3>hospital</h3>
-          <span>available hospitals</span>
+          <div class="imageBox"></div><br>
+          <h3>hospital</h3><br>
+          <span>available hospitals</span><br>
           <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -200,9 +224,9 @@
           </div>
         </div>
         <div class="box">
-          <img src="images/clinic.jpg" alt="" />
-          <h3>clinics</h3>
-          <span>available clinics</span>
+          <div class="imageBox"></div><br>
+          <h3>clinics</h3><br>
+          <span>available clinics</span><br>
           <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
@@ -211,14 +235,7 @@
           </div>
         </div>
       </div><br><br><br>
-      <a href="request.html" class="btn"
-        >Request now <span class="fas fa-chevron-right"></span
-      ></a>
-      <a href="book.html" class="btn"
-        >book now<span class="fas fa-chevron-right"></span
-      ></a>
     </section>
-
     <!--career section-->
 
     <!--contact section-->
@@ -290,8 +307,7 @@
       </div>
     </section>
     <!--footer section ends-->
-    <!-- JavaScript Bundle with Popper -->
-    
+    <!-- JavaScript Bundle with Popper --> 
     <script src="script.js"></script>
   </body>
 </html>

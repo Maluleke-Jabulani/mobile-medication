@@ -9,7 +9,7 @@
   </head>
   <body>
     <section class="signup" id="signup">
-      <h1 class="heading"><span>signup</span> now</h1>
+      <h1 class="heading"><a href="index.html"><img style="height: 50px;width: 50px;float: left;" src="/images/home-button.png"></a><span>signup</span> now</h1>
 
       <div class="row">
         <div class="image">
@@ -19,9 +19,9 @@
         <form id="signup">
           <h3>Sign up</h3>
           <p>area with <span>*</span> are required</p>
-          <input  id="name"type="text" placeholder="first name*" class="box"  />
+          <input  id="name"type="text" placeholder="first name*" class="box" required />
           <input type="text" placeholder="middle name optional" class="box" />
-          <input id="surname" type="text" placeholder="last name*" class="box"  />
+          <input id="surname" type="text" placeholder="last name*" class="box" required />
          
           <select id="gender" class="box" name="gender">       
             <option value="m">male</option>
@@ -29,27 +29,26 @@
            <input type="contact"
             placeholder="contact number*"
             class="box"
-            
+            required
           />
           <input id="email"
             type="email"
             placeholder="email address*"
             class="box"
-            
+            required
           />
           <input id="address"
             type="address"
             placeholder="street name*"
             class="box"
-          
+            required
           />
-          <input id="address2" type="address" placeholder="town/city*" class="box"  />
-          <input id="address3" type="address" placeholder="zip code*" class="box"  />
+          <input id="address2" type="address" placeholder="town/city*" class="box" required />
+          <input id="address3" type="address" placeholder="zip code*" class="box" required />
 
           
         <select  class="box" name="province">       
       <option value="eastern cape">Eastern cape</option>
-      <option value="eastern cape">free state</option>
       <option value="Gauteng">Gauteng</option>
       <option value="Kwazullu-natal">Kwazullu-natal</option>
       <option value="limpopo">limpopo</option>
@@ -58,18 +57,33 @@
       <option value="north west">north west</option>
       <option value="western cape">western cape</option>
         </select>
-  
+          <input id="username" type="text" placeholder="username*" class="box" required />
           <input id="password" type="password" placeholder="password*" class="box" required />
-          
-          <button type="submit" class="btn" onclick="register()">Sign up</button>
+          <input  type="password" placeholder="confirm password*" class="box" required />
+          <input type="submit" value="sign up" class="btn" />
         </form>
       </div>
     </section>
 
-<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6./firebase-app-compat.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDgst7E9Pc_nnJkHbY_0R5SC_yXf9Vvwk0",
+          authDomain: "signup-b5158.firebaseapp.com",
+          projectId: "signup-b5158",
+          storageBucket: "signup-b5158.appspot.com",
+          messagingSenderId: "112044940057",
+          appId: "1:112044940057:web:2afae3aaf4a3164a118388"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js"></script>
-    <script src="auth.js"></script>
   </body>
 </html>

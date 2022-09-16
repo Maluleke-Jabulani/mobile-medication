@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Figtree', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,28 +10,87 @@
     transition: all ease .2s ease-out;
     text-decoration: none;
 }
+
+/*--Switch--*/
+
+    #Switch {
+        padding: 20px 20px;
+        position: absolute;
+        display: none;
+        background-color: #3498DB;
+        height: 200px;
+        width: 240px;
+        color: white;
+    }
+
+    #Switch a {
+        color: white;
+    }
+
+    .Click {
+
+        font-weight: bold;
+    }
+
+    .Click:hover {
+        background-color: #3498DB;
+        color: white;
+    }
+
+    .Choice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .Choice a {
+        text-align: center;
+    }
+
+/*--/Switch--*/
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
-
 }
+
+.Logo_Sprite {
+    animation: moveSpritesheet 1s steps(6) infinite;
+}
+
+.Sprite {
+    padding: 10px 10px;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+}
+
+@keyframes moveSpritesheet {
+    from {
+        transform: translate3d(0px,0,0)
+    }
+    to {
+        transform: translate3d(-109%,0,0)
+    }
+}
+
 section{
     padding: 2rem 9%;
-
 }
 
 .heading{
     text-align: center;
     padding-bottom: 2rem;
-    text-shadow: rgb(0,128,128);
+    text-shadow: rgb(255, 255, 255);
     text-transform: uppercase;
-    color: blue;
+    color: rgb(0, 0, 0);
     font-size: 5rem;
     letter-spacing: 2rem;
-    
 }
+
 .heading span{
     color: darkcyan;
 }
@@ -42,17 +101,7 @@ section{
 }
 
 
-.btn{
-    margin-top: 1rem;
-    padding: 0.5rem;
-    display:inline-block ;
-    padding-left: 1rem;
-    border:0.2rem solid royalblue;
-    border-radius: 0.5rem;
-    color: blue;
-    cursor: pointer;
-    font-size: 1.7rem;
-}
+
 .btn span{
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
@@ -60,16 +109,15 @@ section{
     color: lightcyan;
     margin-left: 0.5rem;
 }
-.btn:hover{
-    background:blue ;
-    color: lightcyan;
-}
+
+
 
 .btn:hover span{
     background:lightcyan;
     color: royalblue;
     margin-left: 1rem;
 }
+
 .header{
     padding: 2rem 9%;
     position: fixed;
@@ -77,11 +125,10 @@ section{
     left: 0;
     right: 0;
     z-index: 1000;
-    box-shadow: 0 0.5rem 1.5rem rgb(0,128,128);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
+    background: rgb(255, 255, 255);
 }
 
 .header .logo {
@@ -91,7 +138,7 @@ section{
 }
 
 .header .logo i{
-    color:darkcyan ;
+    color:rgb(14, 158, 1) ;
 }
 
 .header .navbar a{
@@ -102,67 +149,69 @@ section{
 
 .header .navbar a:hover{
     color:	teal ;
-    background-color: lightcyan;
-    font-size:2.5rem;
 }
+
 .header a span{
-    color: gold;
+    color: rgb(6, 148, 1);
 }
+
 .header .navbar .btn{
-    font-size: 0.9rem;
-    outline: none;
-    border: none;
-    background: transparent;
-    border-bottom: 0.2rem solid blue;
-    border-radius: 0;
+    padding: 5px 5px;
+    border: 5px;
+    color: white;
+    border-style: initial;
+    background: rgb(156, 156, 156);
+    border-radius: 20px;
 }
 
 .header .navbar .btn:hover{
     color: lightcyan ;
-    background-color: blue;
-    font-size:1rem;
-    border-radius: 0.5rem;
+    background-color: rgb(0, 255, 13);
 }
 
 #menu-btn{
     font-size: 2.5rem;
-    color:royalblue;
-    padding: 1rem 1.5rem;
+    color:rgb(0, 0, 0);
+  
     cursor: pointer;
     display: none;
 }
 
+
 /*home section*/
 .home{
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding-top: 10rem;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
+
 .home .image{
     flex: 1 1 45rem;
 }
+
 .home .image img{
     width: 100%;
 }
-.home .content{
-    flex: 1 1 45rem;
-}
+
 .home .content h3{
-    font-size: 4.5rem;
-    color: blue;
+    margin-top: 120px;
+    font-size: 3rem;
+    color: rgb(14, 158, 1);
     line-height: 1.8;
-    text-shadow: rgb(0,128,128);
 }
+
 .home .content p{
     font-size: 1.7rem;
-    color:  royalblue;
+    color:  rgb(97, 96, 96);
     line-height: 1.8;
     padding: 1rem;
     text-transform: lowercase;
-    font-style: italic;
-    
+    font-style: italic;    
 }
 
 .home .content a{
@@ -170,14 +219,26 @@ section{
     position: relative;
 }
 
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
 
+.content1 p {
 
+    font-size: 2rem;
+}
 /*home section end*/
 
 /*services section*/
 .services{
     background: lightcyan;
 }
+
 .services .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -216,7 +277,8 @@ section{
     color: royalblue;
     font-size: 1.4rem;
     line-height: 2;
-    text-transform: lowercase;}
+    text-transform: lowercase;
+}
 /*services section end*/
 
 
@@ -228,6 +290,7 @@ section{
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .about .row .image{
     flex: 1 1 45rem;
 }
@@ -247,18 +310,17 @@ section{
     text-shadow: black;
     font-size: 4rem;
     line-height: 1.8;
-    margin-left: 6rem;
-    
+    margin: 10px 10px 10px 10px;
 }
 
 .about .row .content p{
-    color: blue;
-    padding:1rem 0 ;
+    color: rgb(80, 80, 80);
     font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.8;
-    text-transform: lowercase;
-    margin-left: 6rem;
+    margin: 10px 10px 10px 10px;
 }
+
 .about .row .content .btn{
     margin-left: 6rem;
 }
@@ -266,28 +328,33 @@ section{
 
 
 /*doctors section */
+.imageBox {
+    display: flex;
+    margin: 15px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 20rem;
+    width: 31.5rem;
+    background-color: #ddd;
+
+}
 
 .doctors .box-container{
-    display: grid;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap:8rem;
 }
 
 .doctors .box-container .box{
+    align-items: center;
     text-align: center;
     background: lightblue;
     border-radius: 5rem;
     border: blue;
     box-shadow: black;
-    padding: 2rem;
-}
-
-.doctors .box-container .box img{
-    height: 20rem;
-    border:red;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .doctors .box-container .box h3{
@@ -309,24 +376,23 @@ section{
     border-radius:0.5rem ;
     border: blue;
     margin:0.3 ;
-
 }
 
 .doctors .box-container .box .share a:hover{
     background: gold;
     color:blue ;
     border-radius: 5rem;
-
 }
+
 .doctors .btn{
     margin-left: 30rem;
     align-items: center;
 }
+
 /*doctors section end*/
 
 
 /*book section*/
-
 .book .row{
     display: flex;
     align-items: center;
@@ -341,6 +407,7 @@ section{
 .book .row .image img{
     width: 100%;
 }
+
 .book .row form{
     flex: 1 1 45rem; 
     border:0.3rem solid blue; 
@@ -370,6 +437,7 @@ section{
 .book .row form .btn{
     padding: 1rem 3rem;
 }
+
 /*book section end*/
 
 /*request section*/
@@ -380,20 +448,18 @@ section{
     font-size: 16px;
     border: none;
     cursor: pointer;
-
-  }
+}
   
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus {
     background-color: #2980B9;
-  }
+}
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -401,19 +467,19 @@ section{
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  .dropdown-content a {
+.dropdown-content a {
     color: blue;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-size: 1.5rem;
-  }
+}
   
-  .dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: #ddd;}
   
-  .show {display:inline;}
+.show {display:inline;}
 /*request section end*/
 
 /*contact section*/
@@ -526,6 +592,7 @@ section{
 
 /*footer section */
 .footer{
+    font-family:Arial, Helvetica, sans-serif;
     background: lightcyan;
 }
 
@@ -542,7 +609,7 @@ section{
 }
 .footer .box-container .box a{
     display: block;
- font-size: 1.2rem;
+    font-size: 1.2rem;
     color: dark cyan;
     padding: 1rem 0;
 
@@ -553,7 +620,8 @@ section{
     text-transform: lowercase;
 }
 .footer .box-container .box a:hover {
-    padding-right: 2rem;
+    
+    color: white;
 }
 /*footer section end*/
 
@@ -577,8 +645,7 @@ section{
 }
 .login .row form{
     flex: 1 1 45rem; 
-    border:0.3rem solid blue; 
-    box-shadow: black;
+    background-color: #84b7da;
     text-align: center;
     padding: 2rem;
     border-radius: 0.5rem;
